@@ -7,8 +7,8 @@ struct Node {
     Node(int _key) : key(_key), left(nullptr), right(nullptr) {}
 };
 
-bool isContains(Node*);
-Node* insert(Node*);
+bool isContains(Node*, int);
+Node* insert(Node*, int);
 int getMax(Node*);
 int getMin(Node*);
 Node* remove(Node*, int);

@@ -1,6 +1,6 @@
 #include "solution.h"
 
-bool isContains(Node* node) {
+bool isContains(Node* node, int key) {
     return false;
 }
 
