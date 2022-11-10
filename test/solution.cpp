@@ -51,6 +51,22 @@ TEST_CASE("Validate getMax") {
     clean(test);
 }
 
+TEST_CASE("Validate LCA") {
+
+    Node* test = new Node(100);
+    test = insert(test, 150);
+    test = insert(test, 50);
+    test = insert(test, 15);
+    test = insert(test, 12);
+    test = insert(test, 200);
+
+    CHECK(LCA(test, 50, 200) == 100);
+    CHECK(LCA(test, 15, 12) == 15);
+    CHECK(LCA(test, 15, 120) == -1);
+
+    clean(test);
+}
+
 
 TEST_CASE("Validate insert") {
 
@@ -77,6 +93,7 @@ TEST_CASE("Validate remove") {
     test = remove(test, 100);
     CHECK(test->key == 140);
     CHECK(test->right == nullptr);
+
 
     clean(test);
 }

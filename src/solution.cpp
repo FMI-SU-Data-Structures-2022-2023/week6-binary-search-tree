@@ -27,3 +27,7 @@ Node* section(const Node* l, const Node* r) {
 bool areCousins(const Node*, int key1, int key2) {
     return false;
 }
+
+int LCA(const Node*, int key1, int key2) {
+    return -1;
+}
