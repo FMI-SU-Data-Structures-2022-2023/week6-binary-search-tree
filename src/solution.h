@@ -9,8 +9,8 @@ struct Node {
 
 bool isContains(Node*, int);
 Node* insert(Node*, int);
-int getMax(Node*);
-int getMin(Node*);
+Node* getMax(Node*);
+Node* getMin(Node*);
 Node* remove(Node*, int);
 Node* section(const Node*, const Node*);
 bool areCousins(const Node*, int, int);

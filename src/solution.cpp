@@ -8,12 +8,12 @@ Node* insert(Node* node, int value) {
     return node;
 }
 
-int getMax(Node* node) {
-    return -1;
+Node* getMax(Node* node) {
+    return nullptr;
 }
 
-int getMin(Node* node) {
-    return -1;
+Node* getMin(Node* node) {
+    return nullptr;
 }
 
 Node* remove(Node* node, int key) {
