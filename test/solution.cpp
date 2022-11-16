@@ -75,7 +75,7 @@ TEST_CASE("Validate insert") {
     test->right = new Node(140);
     test->left->left = new Node(25);
     test = insert(test, 150);
-    CHECK(test->right->right->key == 180);
+    CHECK(test->right->right->key == 150);
     test = insert(test, 75);
     CHECK(test->left->right->key == 75);
 
