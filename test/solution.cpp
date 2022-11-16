@@ -20,7 +20,7 @@ TEST_CASE("Validate isContains") {
     CHECK(isContains(test, 140) == true);
     CHECK(isContains(test, 25) == true);
     CHECK(isContains(test, 0) == false);
-    CHECK(isContains(test, 150) == flase);
+    CHECK(isContains(test,  150) == false);
     clean(test);
 }
 
